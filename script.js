@@ -1,1 +1,1 @@
-const els=document.querySelectorAll(".reveal");const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add("show")}),{threshold:.06});els.forEach(e=>io.observe(e));
+document.documentElement.classList.add('js'); const links=document.querySelectorAll('a[href^="#"]'); links.forEach(a=>a.addEventListener('click',e=>{const id=a.getAttribute('href');if(id&&id.length>1){const el=document.querySelector(id);if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth',block:'start'});}}}));
